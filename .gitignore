@@ -1,0 +1,53 @@
+# macOS
+.DS_Store
+
+# Xcode
+build/
+DerivedData/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+*.xccheckout
+*.moved-aside
+*.xcuserstate
+*.xcscmblueprint
+
+# Swift Package Manager
+.build/
+Package.pins
+Package.resolved
+Packages/
+
+# CocoaPods
+Pods/
+
+# Carthage
+Carthage/
+
+# fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/
+fastlane/test_output/
+
+# SwiftPM Xcode workspace
+*.xcodeproj/project.xcworkspace/xcuserdata/
+
+# Archives
+*.ipa
+
+# IDEs
+.idea/
+*.swp
+
+# Xcode workspace
+*.xcworkspace/ 
+
+# Environment files
+Secrets.swift
