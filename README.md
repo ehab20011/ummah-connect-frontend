@@ -1,5 +1,7 @@
 # UmmahConnect iOS Frontend
 
+<img width="1280" height="723" alt="logo-nobg" src="https://github.com/user-attachments/assets/e41a4c47-dff0-44e5-b65f-9dcd9513383b" />
+
 Welcome to the iOS client for the **UmmahConnect** platform. This repository contains the Swift/Xcode project that powers the mobile experience and communicates with the UmmahConnect backend API.
 
 ## Features
