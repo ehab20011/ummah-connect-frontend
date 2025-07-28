@@ -18,3 +18,19 @@ struct SignupPayload: Codable {
     let country: String?
     let ein: String?
 }
+
+struct UserProfile: Codable, Identifiable {
+    let id: String
+    let phone_number: String
+    let email: String
+    let username: String
+    let display_name: String?
+    let profile_pic_url: String?
+    let is_masjid: Bool
+    let last_active_at: String?
+    let address: String?
+    let city: String?
+    let state: String?
+    let country: String?
+    let ein: String?
+}

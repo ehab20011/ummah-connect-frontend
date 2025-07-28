@@ -1,4 +1,6 @@
 import SwiftUI
+import iPhoneNumberField
+import PhoneNumberKit
 
 struct SignUpView: View {
     @EnvironmentObject var session: UserSession
@@ -9,6 +11,7 @@ struct SignUpView: View {
     @State private var username = ""
     @State private var email = ""
     @State private var phone = ""
+    @State private var isEditingPhone = false
     @State private var password = ""
     @State private var confirmPassword = ""
 
@@ -38,7 +41,7 @@ struct SignUpView: View {
 
                     // Core fields
                     VStack(spacing: 16) {
-                        TextField("Full Name (display name)", text: $name)
+                        TextField("Full Name or Masjid Name", text: $name)
                             .textContentType(.name)
                             .styledField()
 
@@ -52,8 +55,11 @@ struct SignUpView: View {
                             .autocapitalization(.none)
                             .styledField()
 
-                        TextField("Phone Number", text: $phone)
-                            .keyboardType(.phonePad)
+                        iPhoneNumberField("(###) ###-####", text: $phone, isEditing: $isEditingPhone)
+                            .flagHidden(true)
+                            .prefixHidden(true)
+                            .maximumDigits(10)
+                            .keyboardType(.numberPad)
                             .styledField()
 
                         SecureField("Password", text: $password)
@@ -145,13 +151,17 @@ struct SignUpView: View {
 
         isLoading = true
 
+        let kit = PhoneNumberKit()
+        let normalizedPhone = (try? kit.parse(phone))
+            .map { kit.format($0, toType: .e164) } ?? "+1" + phone.filter(\.isNumber)
+        
         let payload = SignupPayload(
             email: email.lowercased().trimmingCharacters(in: .whitespaces),
             username: username.lowercased().trimmingCharacters(in: .whitespaces),
             password: password,
             is_masjid: isMasjid,
             display_name: name.isEmpty ? username : name,
-            phone_number: phone,
+            phone_number: normalizedPhone,
             profile_pic_url: nil,
             address: isMasjid ? address : nil,
             city: isMasjid ? city : nil,

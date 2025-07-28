@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		CC886A1C2E36E9DC00DAB5C1 /* iPhoneNumberField in Frameworks */ = {isa = PBXBuildFile; productRef = CC886A1B2E36E9DC00DAB5C1 /* iPhoneNumberField */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		CCC4E80C2E35AD90002078C1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,12 +28,31 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CC2236C02E36DAE400ED0A22 /* PhoneNumberKit.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.extensionkit-extension"; includeInIndex = 0; path = PhoneNumberKit.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCC4E7FD2E35AD8E002078C1 /* UmmahConnect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UmmahConnect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCC4E80B2E35AD90002078C1 /* UmmahConnectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UmmahConnectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCC4E8152E35AD90002078C1 /* UmmahConnectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UmmahConnectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		CC2236C82E36DAE400ED0A22 /* Exceptions for "PhoneNumberKit" folder in "PhoneNumberKit" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = CC2236BF2E36DAE400ED0A22 /* PhoneNumberKit */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		CC2236C12E36DAE400ED0A22 /* PhoneNumberKit */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				CC2236C82E36DAE400ED0A22 /* Exceptions for "PhoneNumberKit" folder in "PhoneNumberKit" target */,
+			);
+			path = PhoneNumberKit;
+			sourceTree = "<group>";
+		};
 		CCC4E7FF2E35AD8E002078C1 /* UmmahConnect */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = UmmahConnect;
@@ -48,10 +71,18 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		CC2236BD2E36DAE400ED0A22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CCC4E7FA2E35AD8E002078C1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC886A1C2E36E9DC00DAB5C1 /* iPhoneNumberField in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +103,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CC8869BB2E36DBEB00DAB5C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CCC4E7F42E35AD8E002078C1 = {
 			isa = PBXGroup;
 			children = (
 				CCC4E7FF2E35AD8E002078C1 /* UmmahConnect */,
 				CCC4E80E2E35AD90002078C1 /* UmmahConnectTests */,
 				CCC4E8182E35AD90002078C1 /* UmmahConnectUITests */,
+				CC2236C12E36DAE400ED0A22 /* PhoneNumberKit */,
+				CC8869BB2E36DBEB00DAB5C1 /* Frameworks */,
 				CCC4E7FE2E35AD8E002078C1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,6 +128,7 @@
 				CCC4E7FD2E35AD8E002078C1 /* UmmahConnect.app */,
 				CCC4E80B2E35AD90002078C1 /* UmmahConnectTests.xctest */,
 				CCC4E8152E35AD90002078C1 /* UmmahConnectUITests.xctest */,
+				CC2236C02E36DAE400ED0A22 /* PhoneNumberKit.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,6 +136,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		CC2236BF2E36DAE400ED0A22 /* PhoneNumberKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC2236C92E36DAE400ED0A22 /* Build configuration list for PBXNativeTarget "PhoneNumberKit" */;
+			buildPhases = (
+				CC2236BC2E36DAE400ED0A22 /* Sources */,
+				CC2236BD2E36DAE400ED0A22 /* Frameworks */,
+				CC2236BE2E36DAE400ED0A22 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				CC2236C12E36DAE400ED0A22 /* PhoneNumberKit */,
+			);
+			name = PhoneNumberKit;
+			packageProductDependencies = (
+			);
+			productName = PhoneNumberKit;
+			productReference = CC2236C02E36DAE400ED0A22 /* PhoneNumberKit.appex */;
+			productType = "com.apple.product-type.extensionkit-extension";
+		};
 		CCC4E7FC2E35AD8E002078C1 /* UmmahConnect */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CCC4E81F2E35AD90002078C1 /* Build configuration list for PBXNativeTarget "UmmahConnect" */;
@@ -112,6 +175,7 @@
 			);
 			name = UmmahConnect;
 			packageProductDependencies = (
+				CC886A1B2E36E9DC00DAB5C1 /* iPhoneNumberField */,
 			);
 			productName = UmmahConnect;
 			productReference = CCC4E7FD2E35AD8E002078C1 /* UmmahConnect.app */;
@@ -173,6 +237,9 @@
 				LastSwiftUpdateCheck = 1640;
 				LastUpgradeCheck = 1640;
 				TargetAttributes = {
+					CC2236BF2E36DAE400ED0A22 = {
+						CreatedOnToolsVersion = 16.4;
+					};
 					CCC4E7FC2E35AD8E002078C1 = {
 						CreatedOnToolsVersion = 16.4;
 					};
@@ -195,6 +262,9 @@
 			);
 			mainGroup = CCC4E7F42E35AD8E002078C1;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				CC886A1A2E36E9DC00DAB5C1 /* XCRemoteSwiftPackageReference "iPhoneNumberField" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = CCC4E7FE2E35AD8E002078C1 /* Products */;
 			projectDirPath = "";
@@ -203,11 +273,19 @@
 				CCC4E7FC2E35AD8E002078C1 /* UmmahConnect */,
 				CCC4E80A2E35AD90002078C1 /* UmmahConnectTests */,
 				CCC4E8142E35AD90002078C1 /* UmmahConnectUITests */,
+				CC2236BF2E36DAE400ED0A22 /* PhoneNumberKit */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		CC2236BE2E36DAE400ED0A22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CCC4E7FB2E35AD8E002078C1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -232,6 +310,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		CC2236BC2E36DAE400ED0A22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CCC4E7F92E35AD8E002078C1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -269,6 +354,59 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		CC2236CA2E36DAE400ED0A22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PhoneNumberKit/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PhoneNumberKit;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ehab.ummahconnect.UmmahConnect.PhoneNumberKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CC2236CB2E36DAE400ED0A22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PhoneNumberKit/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PhoneNumberKit;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ehab.ummahconnect.UmmahConnect.PhoneNumberKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		CCC4E81D2E35AD90002078C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -546,6 +684,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		CC2236C92E36DAE400ED0A22 /* Build configuration list for PBXNativeTarget "PhoneNumberKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC2236CA2E36DAE400ED0A22 /* Debug */,
+				CC2236CB2E36DAE400ED0A22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		CCC4E7F82E35AD8E002078C1 /* Build configuration list for PBXProject "UmmahConnect" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -583,6 +730,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CC886A1A2E36E9DC00DAB5C1 /* XCRemoteSwiftPackageReference "iPhoneNumberField" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MojtabaHs/iPhoneNumberField";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.10.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CC886A1B2E36E9DC00DAB5C1 /* iPhoneNumberField */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CC886A1A2E36E9DC00DAB5C1 /* XCRemoteSwiftPackageReference "iPhoneNumberField" */;
+			productName = iPhoneNumberField;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CCC4E7F52E35AD8E002078C1 /* Project object */;
 }
